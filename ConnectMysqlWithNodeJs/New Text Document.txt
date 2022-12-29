@@ -1,0 +1,11 @@
+Error:>>>
+errno: 1251,
+sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+
+Solution:>>>>>
+go to mysql command line 
+Step 1 >>>>
+alter user 'root'@'localhost' identified with mysql_native_password by 'root123';
+
+step2>>>>>>
+ flush privileges;
